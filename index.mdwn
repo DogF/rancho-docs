@@ -1,0 +1,14 @@
+[[!meta title="Manual del Criptorally"]]
+#Manual del Criptorally
+
+Versión: 2014-09-XX
+
+##[Introducción[introduccion]]
+
+*[¿Porqué estamos aquí?[introduccion#porqueaqui]]
+
+##Glosario
+
+*[Administrador de contraseñas[glosario#admincon]
+
+Trabajo posible gracias a los piratas argentinos.
