@@ -1,14 +1,16 @@
 [[!meta title="Manual del Criptorally"]]
-#Manual del Criptorally
+# Manual del Criptorally
 
 Versión: 2014-09-XX
 
-##[[Introducción|introduccion]]
+## [[Introducción|introduccion]]
 
-*[[¿Porqué estamos aquí?|introduccion#porqueaqui]]
+* [[¿Porqué estamos aquí?|introduccion#porqueaqui]]
 
-##[[Glosario]]
+## [[Glosario]]
 
-*[[Administrador de contraseñas|glosario#admincon]]
-*[[World Wide Web (WWW)|glosario#www]]
+* [[Administrador de contraseñas|glosario#admincon]]
+
+* [[World Wide Web (WWW)|glosario#www]]
+
 Trabajo posible gracias a los piratas argentinos.
