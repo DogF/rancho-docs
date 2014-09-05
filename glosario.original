@@ -1,1329 +1,662 @@
 Mucho de este contenido está basado en [http://en.cship.org/wiki/Special:Allpages](http://en.cship.org/wiki/Special:Allpages)
 
-* <a name="indice"></a>Glosario
-
-	* [Administrador de contraseñas](#Administrador_de_contrasenias)
-
-		* [Agregador](#Agregador)
-
-		* [Algoritmo](#Algoritmo)
-
-		* [Análisis de amenazas](#Analisis_de_amenazas)
-
-		* [Análisis de tráfico](#Analisis_de_trafico)
-
-		* [Ancho de banda](#Ancho_de_banda)
-
-		* [Anonimato](#Anonimato)
-
-		* [Archivo de registro](#Archivo_de_registro)
-
-		* [ASP (proveedor de servicios de aplicaciones)](#ASP_proveedor_de_servicios_de_aplicaciones_)
-
-		* [Ataque por fuerza bruta](#Ataque_por_fuerza_bruta)
-
-	* [Backbone](#Backbone)
-
-		* [Badware](#Badware)
-
-		* [Bash (Bourne-again shell)](#Bash_Bourne-again_shell_)
-
-		* [Baudios](#Baudios)
-
-		* [BitTorrent](#BitTorrent)
-
-		* [Bluebar](#Bluebar)
-
-		* [Bloqueo](#Bloqueo)
-
-	* [Caché](#Cache)
-
-		* [Censorware](#Censorware)
-
-		* [Censura](#Censura)
-
-		* [CGI (Interfaz de gateway común)](#CGI_Interfaz_de_gateway_comun_)
-
-		* [Cifrado](#Cifrado)
-
-		* [Cifrado completo de disco](#Cifrado_completo_de_disco)
-
-		* [Cifrado de disco](#Cifrado_de_disco)
-
-		* [Clave pública](#Clave_publica)
-
-		* [Código (de cifrado)](#Codigo_de_cifrado_)
-
-		* [Confidencialidad directa perfecta (PFS)](#Confidencialidad_directa_perfecta_PFS_)
-
-		* [Cookie](#Cookie)
-
-		* [Criptografía](#Criptografia)
-
-		* [Criptografía de clave pública/cifrado de clave pública](#Criptografia_de_clave_publica_cifrado_de_clave_publica)
-
-		* [Clave privada](#Clave_privada)
-
-		* [Cliente](#Cliente)
-
-		* [Chat](#Chat)
-
-	* [DARPA](#DARPA_)
-
-		* [Descifrado](#Descifrado)
-
-		* [Dirección IP](#Direccion_IP)
-
-		* [Dirección IP públicamente ruteable](#Direccion_IP_publicamente_ruteable)
-
-		* [DNS (Sistema de nombres de dominio)](#DNS_Sistema_de_nombres_de_dominio_)
-
-		* [Dominio](#Dominio)
-
-		* [Dominio de alto nivel con código de país (ccTLD)](#Dominio_de_alto_nivel_con_codigo_de_pais_ccTLD_)
-
-		* [Dominio de nivel superior (TLD)](#Dominio_de_nivel_superior_TLD_)
-
-	* [E-mail (correo electrónico)](#E-mail_correo_electronico_)
-
-		* [Escuchas ilegales](#Escuchas_ilegales)
-
-		* [Esquema](#Esquema)
-
-		* [Esteganografía](#Esteganografia)
-
-		* [Ethernet](#Ethernet)
-
-		* [Evasión](#Evasion)
-
-		* [Expresión regular](#Expresion_regular)
-
-	* [Filtro](#Filtro)
-
-		* [Filtro de bajo ancho de banda](#Filtro_de_bajo_ancho_de_banda)
-
-		* [Filtro de palabra clave](#Filtro_de_palabra_clave)
-
-		* [Firefox](#Firefox)
-
-		* [Firewall (cortafuegos)](#Firewall_cortafuegos_)
-
-		* [Firmware](#Firmware)
-
-		* [Foro](#Foro)
-
-		* [Frame (marco)](#Frame_marco_)
-
-		* [FTP (Protocolo de transferencia de archivo)](#FTP_Protocolo_de_transferencia_de_archivo_)
-
-		* [Fuga de DNS](#Fuga_de_DNS)
-
-		* [Full Dúplex](#Full_Duplex)
-
-	* [Gateway](#Gateway)
-
-		* [GNU Privacy Guard](#GNU_Privacy_Guard)
-
-		* [GPG](#GPG)
-
-	* [Half-duplex](#Half-duplex)
-
-		* [Honeypot](#Honeypot)
-
-		* [Host](#Host)
-
-		* [HTTP (Protocolo de transferencia de hipertexto)](#HTTP_Protocolo_de_transferencia_de_hipertexto_)
-
-		* [HTTPS (HTTP seguro)](#HTTPS_HTTP_seguro_)
-
-		* [Hub](#Hub)
-
-	* [IANA](#IANA_)
-
-		* [ICANN](#ICANN_)
-
-		* [Mensajería instantánea (IM)](#Mensajeria_instantanea_IM_)
-
-	* [Intermediario](#Intermediario)
-
-		* [Intercambio de archivos](#Intercambio_de_archivos)
-
-		* [Interfaz común de gateway](#Interfaz_comun_de_gateway)
-
-		* [Interfaz de línea de comandos](#Interfaz_de_linea_de_comandos)
-
-		* [Internet](#Internet)
-
-		* [IRC (Internet relay chat)](#IRC_Internet_relay_chat_)
-
-		* [ISP (Proveedor de servicio de internet)](#ISP_Proveedor_de_servicio_de_internet_)
-
-	* [JavaScript](#JavaScript)
-
-	* [KeePass, KeePassX](#KeePass_KeePassX)
-
-	* [Latencia](#Latencia)
-
-		* [Lista blanca](#Lista_blanca)
-
-		* [Lista negra](#Lista_negra)
-
-	* [MAC](#MAC)
-
-		* [Malware](#Malware)
-
-		* [Man in the middle](#Man_in_the_middle)
-
-		* [Marcador](#Marcador)
-
-		* [Módem](#Modem)
-
-		* [Monitoreo](#Monitoreo)
-
-		* [Motor de difusión de archivos](#Motor_de_difusion_de_archivos)
-
-	* [NAT (Traducción de dirección de red)](#NAT_Traduccion_de_direccion_de_red_)
-
-		* [Nodo](#Nodo)
-
-		* [Nodo abierto](#Nodo_abierto)
-
-		* [Nodo de enlace o intermedio](#Nodo_de_enlace_o_intermedio)
-
-		* [Nodo de salida](#Nodo_de_salida)
-
-		* [Nodo privado](#Nodo_privado)
-
-		* [Nodo Psiphon](#Nodo_Psiphon)
-
-		* [Nodo sin salida](#Nodo_sin_salida)
-
-	* [Ofuscación](#Ofuscacion)
-
-		* [Operador de red](#Operador_de_red)
-
-		* [OTR (mensajes sin registro)](#OTR_mensajes_sin_registro_)
-
-	* [Paquete](#Paquete)
-
-		* [Pastebin](#Pastebin)
-
-		* [P2P](#P2P)
-
-		* [PGP (Pretty Good Privacidad, *privacidad bastante buena*)](#PGP_Pretty_Good_Privacidad_privacidad_bastante_buena_)
-
-		* [PHP](#PHP)
-
-		* [POP3](#POP3)
-
-		* [Privacidad](#Privacidad)
-
-		* [Protocolo](#Protocolo)
-
-		* [Proxy Web](#Proxy_Web)
-
-		* [Puente](#Puente)
-
-		* [Puente Tor](#Puente_Tor)
-
-		* [Puerto](#Puerto)
-
-	* [Remailer](#Remailer)
-
-		* [Router](#Router)
-
-		* [RSS (agregador de noticias)](#RSS_agregador_de_noticias_)
-
-	* [Salto (Hop)](#Salto_Hop_)
-
-		* [Screenlogger](#Screenlogger)
-
-		* [Script](#Script)
-
-		* [Script embebido](#Script_embebido)
-
-		* [Servidor de nombre raíz](#Servidor_de_nombre_raiz)
-
-		* [Servidor DNS](#Servidor_DNS)
-
-		* [Servidor proxy](#Servidor_proxy)
-
-		* [Shell (terminal, consola)](#Shell_terminal_consola_)
-
-		* [Smartphone (teléfono inteligente)](#Smartphone_telefono_inteligente_)
-
-		* [SOCKS](#SOCKS)
-
-		* [Sockets](#Sockets)
-
-		* [Software de cadena de claves](#Software_de_cadena_de_claves)
-
-		* [Spam](#Spam)
-
-		* [SSH (shell seguro)](#SSH_shell_seguro_)
-
-		* [SSL (Secure Sockets Layer, *capa de conexión segura*)](#SSL_Secure_Sockets_Layer_capa_de_conexion_segura_)
-
-		* [Subdominio](#Subdominio)
-
-		* [Switch](#Switch)
-
-	* [Texto plano](#Texto_plano)
-
-		* [Texto sin formato](#Texto_sin_formato)
-
-		* [TLS (Seguridad en capa de transporte)](#TLS_Seguridad_en_capa_de_transporte_)
-
-		* [Trama](#Trama)
-
-		* [Túnel](#Tunel)
-
-		* [Túnel DNS](#Tunel_DNS)
-
-	* [UDP (Paquete de datagramas de usuario)](#UDP_Paquete_de_datagramas_de_usuario_)
-
-		* [URL (localizador uniforme de recursos)](#URL_localizador_uniforme_de_recursos_)
-
-		* [Usenet](#Usenet)
-
-	* [VoIP (Protocolo de voz sobre Internet)](#VoIP_Protocolo_de_voz_sobre_Internet_)
-
-		* [VPN (red privada virtual)](#VPN_red_privada_virtual_)
-
-	* [WAN](#WAN)
-
-		* [Webmail](#Webmail)
-
-		* [Wifi](#Wifi)
-
-		* [WHOIS](#WHOIS)
-
-		* [World Wide Web (WWW)](#World_Wide_Web_WWW_)
-
-
+<a name="x"></a>
 
 #Glosario
 
-Mucho de este contenido está basado en [http://en.cship.org/wiki/Special:Allpages](http://en.cship.org/wiki/Special:Allpages)
-
-#Glosario
-
-<a name="Administrador_de_contrasenias"></a>Administrador de contraseñas
+Administrador de contraseñas
 ============================
-
-######[Arriba](#indice)
 
 Un administrador de contraseñas es software que ayuda al usuario para organizar sus contraseñas y códigos PIN. El software generalmente tiene una base de datos local o un archivo que mantiene los datos de las contraseñas cifrados para conectarse en forma segura con otras computadoras, redes, sitios web y archivos de aplicaciones. KeePass http://keepass.info/ es un ejemplo.
 
-<a name="Agregador"></a>Agregador
+Agregador
 ---------
-
-######[Arriba](#indice)
 
 Un agregador es un servicio que ofrece información recolectada de un sitio y lo pone disponible en diferentes direcciones. Se lo conoce también como agregador RSS, agregador de feeds, lector de feeds, o lector de noticias (No se debe confundir con el lector de noticias de Usenet)
 
-<a name="Algoritmo"></a>Algoritmo
----------
-
-######[Arriba](#indice)
-
-Conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.
-
-<a name="Analisis_de_amenazas"></a>Análisis de amenazas
+Análisis de amenazas
 --------------------
-
-######[Arriba](#indice)
 
 Un análisis de amenazas a la seguridad es un estudio formal, adecuado al detalle, de todas las maneras conocidas de ataques a la seguridad de los servidores o los protocolos, o de los métodos usados para un propósito particular tales como evasión. Las amenazas pueden ser de carácter técnico, como romper el código o explotar los errores de software, o sociales, como el robo de contraseñas o sobornar a alguien que tiene un conocimiento especial. Pocas compañías o individuos tienen el conocimiento y la habilidad para hacer un análisis global, pero todos los implicados tienen que hacer alguna estimación de los temas.
 
-<a name="Analisis_de_trafico"></a>Análisis de tráfico
+Análisis de tráfico
 -------------------
-
-######[Arriba](#indice)
 
 El análisis de tráfico consiste en el análisis estadístico de las comunicaciones cifradas. En algunas circunstancias puede revelar información acerca de la gente comunicada y la información que están compartiendo.
 
-<a name="Ancho_de_banda"></a>Ancho de banda
+Ancho de banda
 --------------
-
-######[Arriba](#indice)
 
 El ancho de banda de una conexión es la máxima velocidad de transferencia de datos, limitada por su capacidad y las características de las computadoras en ambos extremos de la conexión.
 
-<a name="Anonimato"></a>Anonimato
+Anonimato
 ---------
-
-######[Arriba](#indice)
 
 (No se debe confundir con privacidad, seudoanonimato, seguridad o confidencialidad)
 
 El anonimato en Internet es la capacidad de utilizar los servicios sin dejar pistas sobre su identidad o sin ser espiado. El nivel de protección depende de las técnicas de anonimato utilizados y el grado de seguimiento. Los más fuertes técnicas en uso para proteger el anonimato implican la creación de una cadena de comunicación a través de un proceso aleatorio para seleccionar algunos de los enlaces, en la que cada eslabón tiene acceso a la información parcial sobre el proceso. El primero conoce la dirección del usuario de Internet (IP), pero no el contenido, el destino o finalidad de la comunicación, ya que el contenido del mensaje e información de destino están cifrados. El último conoce la identidad del sitio que se está en contacto, pero no la fuente de la sesión. Algunos pasos intermedios entre los enlaces impiden que el primero y el último compartan su conocimiento parcial con el fin de conectar el usuario y el sitio de destino.
 
-<a name="Archivo_de_registro"></a>Archivo de registro
+Archivo de registro
 -------------------
-
-######[Arriba](#indice)
 
 Un archivo de registro es un archivo que guarda una secuencia de mensajes enviados por algún proceso de software, el cual puede ser una aplicación o un componente del sistema operativo. Por ejemplo, los servidores web o los proxies pueden mantener registros que contienen información acerca de cuáles direcciones IP usan estos servicios y cuándo acceden y a que páginas.
 
-<a name="ASP_proveedor_de_servicios_de_aplicaciones_"></a>ASP (proveedor de servicios de aplicaciones)
+ASP (proveedor de servicios de aplicaciones)
 --------------------------------------------
-
-######[Arriba](#indice)
 
 Un ASP es una organización que ofrece software sobre Internet, permitiendo actualizarlo y mantenerlo en forma centralizada.
 
-<a name="Ataque_por_fuerza_bruta"></a>Ataque por fuerza bruta
+Ataque por fuerza bruta
 -----------------------
-
-######[Arriba](#indice)
 
 Un ataque por fuerza bruta consiste en tratar de averiguar una contraseña probando todos las variantes posibles. Es uno de los ataques de hacking más básicos.
 
-<a name="Backbone"></a>Backbone
+Backbone
 ========
-
-######[Arriba](#indice)
 
 Un backbone (a veces llamado red troncal) es uno de los enlaces de comunicaciones de gran ancho de banda que une redes en diferentes países y organizaciones alrededor del mundo en Internet.
 
-<a name="Badware"></a>Badware
+Badware
 -------
-
-######[Arriba](#indice)
 
 Consulte *malware*.
 
-<a name="Bash_Bourne-again_shell_"></a>Bash (Bourne-again shell)
+Bash (Bourne-again shell)
 -------------------------
-
-######[Arriba](#indice)
 
 El shell bash es una interfaz de línea de comandos para sistemas operativos GNU/Linux o Unix, basado en el shell Bourn.
 
-<a name="Baudios"></a>Baudios
--------
-
-######[Arriba](#indice)
-
-El baudio es una unidad de medida, que representa el número de símbolos por  segundo en un medio de transmisión digital. Cada símbolo puede codificar uno o más bits dependiendo del esquema de modulación. Es importante resaltar que no se debe confundir la velocidad en baudios con el bit rate o velocidad en bits por segundo, ya que cada evento de señalización (símbolo) transmitido puede transportar uno o más bits
-
-<a name="BitTorrent"></a>BitTorrent
+BitTorrent
 ----------
-
-######[Arriba](#indice)
 
 BitTorrent es un protocolo para compartir archivos entre pares, inventado por Bram Cohen en 2001. Permite a los individuos distribuir de forma barata y eficaz archivos de gran tamaño, como imágenes de CD, video o archivos de música.
 
-<a name="Bluebar"></a>Bluebar
+Bluebar
 -------
-
-######[Arriba](#indice)
 
 La barra azul de URL (llamada en la jerga Bluebar Psiphon) es la forma en la parte superior de la ventana del navegador del nodo Psiphon que le permite acceder al sitio bloqueado escribiendo su URL en el interior.
 
 Vea también *nodo Psiphon*.
 
-<a name="Bloqueo"></a>Bloqueo
+Bloqueo
 -------
-
-######[Arriba](#indice)
 
 El bloqueo impide el acceso a un recurso de Internet, basado en un gran número de métodos.
 
-<a name="Cache"></a>Caché
+Caché
 =====
-
-######[Arriba](#indice)
 
 La caché es una parte de un sistema de procesamiento de información usada para almacenar datos usados en forma reciente o muy frecuente con el fin de acelerar el acceso repetido a ellos. Una caché web mantiene copias de los archivos de la página web.
 
-<a name="Censorware"></a>Censorware
+Censorware
 ----------
-
-######[Arriba](#indice)
 
 Censorware es software usado para filtrar o bloquear el acceso a Internet. Este término se usa a menudo para referirse al software instalado en la máquina cliente (la computadora usada para acceder a Internet). La mayoría del censorware se utiliza con propósitos de control parental.
 Algunas veces el término censorware se utiliza también para referirse al software usado con los mismos propósitos pero instalado en un servidor de red o un router.
 
-<a name="Censura"></a>Censura
+Censura
 -------
-
-######[Arriba](#indice)
 
 Censurar es evitar la publicación o recuperación de información, o tomar medidas, legales o de otro tipo, contra los editores y lectores.
 
-<a name="CGI_Interfaz_de_gateway_comun_"></a>CGI (Interfaz de gateway común)
+CGI (Interfaz de gateway común)
 -------------------------------
-
-######[Arriba](#indice)
 
 CGI es un estándar de uso común que permite a los programas de un servidor web ejecutarse como aplicaciones. Algunas páginas web basadas en proxy usan CGI, por lo que se denominan "proxies CGI". (Una de las más populares aplicaciones escrita por James Marshall usa el lenguaje de programación Perl y se denomina CGIProxy.)
 
-<a name="Cifrado"></a>Cifrado
+Cifrado
 -------
-
-######[Arriba](#indice)
 
 Se denomina así a todo método usado para recodificar y mezclar datos o transformarlos matemáticamente para que sea ilegible a las terceras partes y por lo tanto, no puedan descifrar el secreto que oculta. Es posible cifrar datos en su disco rígido local usando software como TrueCrypt (http://www.truecrypt.org) o cifrar el tráfico de Internet con TLS/SSL o SSH.
 
 vea también *descifrado*.
 
-<a name="Cifrado_completo_de_disco"></a>Cifrado completo de disco
+Cifrado completo de disco
 -------------------------
-
-######[Arriba](#indice)
 
 vea *cifrado de disco*.
 
-<a name="Cifrado_de_disco"></a>Cifrado de disco
+Cifrado de disco
 ----------------
-
-######[Arriba](#indice)
 
 El cifrado de disco es una tecnología que protege la información al convertirla en ilegible para que no pueda ser descifrada fácilmente por personas no autorizadas. Usa software o hardware para cifrar cada bit de datos que está en un disco o en un volumen de disco. El cifrado de disco previene el acceso no autorizado a los datos almacenados.
 
-<a name="Clave_publica"></a>Clave pública
+Clave pública
 -------------
-
-######[Arriba](#indice)
 
 vea *criptografía de clave pública/cifrado de clave pública*.
 
-<a name="Codigo_de_cifrado_"></a>Código (de cifrado)
+Código (de cifrado)
 -------------------
-
-######[Arriba](#indice)
 
 En criptografía, un código es un algoritmo para realizar cifrado o descifrado de mensajes.
 
-<a name="Confidencialidad_directa_perfecta_PFS_"></a>Confidencialidad directa perfecta (PFS)
+Confidencialidad directa perfecta (PFS)
 ---------------------------------------
-
-######[Arriba](#indice)
 
 En un protocolo de acuerdo de claves autenticadas que utiliza la criptografía de clave pública, la confidencialidad directa perfecta (PFS o) es la propiedad que asegura que una clave de sesión derivada de un conjunto de claves públicas y privadas de largo plazo no se verá comprometida si una de las claves privadas (a largo plazo) se ve comprometida en el futuro.
 
-<a name="Cookie"></a>Cookie
+ Cookie
 -------
-
-######[Arriba](#indice)
 
 Un cookie es una cadena de texto enviado por un servidor web al navegador del usuario para almacenarla en su computadora, conteniendo información necesaria para mantener la continuidad en las sesiones a través de múltiples páginas web, o a través de múltiple sesiones. Algunos sitios web no se pueden usar sin aceptar ni almacenar una cookie. Algunas personas consideran esto como una invasión a la privacidad y/o un riesgo de seguridad.
 
-<a name="Criptografia"></a>Criptografía
+ Criptografía
 -------------
-
-######[Arriba](#indice)
 
 La criptografía es la práctica y el estudio de las técnicas para establecer comunicaciones seguras en presencia de terceras partes (los llamados adversarios). En forma más general, consiste en la construcción y análisis de protocolos para vencer a nuestros adversarios en varios aspectos relacionados con la seguridad de la información tales como confidencialidad, integridad, autentificación y no repudio de datos. La criptografía moderna abarca un amplio rango de disciplinas tales como matemáticas, ciencias de la computación e ingeniería eléctrica. Sus aplicaciones incluyen tarjetas ATM, contraseñas de computadoras y comercio electrónico.
 
-<a name="Criptografia_de_clave_publica_cifrado_de_clave_publica"></a>Criptografía de clave pública/cifrado de clave pública
+ Criptografía de clave pública/cifrado de clave pública
 -------------------------------------------------------
-
-######[Arriba](#indice)
 
 La criptografía de clave pública se refiere al sistema de cifrado que requiere dos claves separadas, una de las cuales es secreta y la otra pública. Aunque son diferentes, ambas claves están relacionadas matemáticamente. Una clave cifra el texto plano y la otra lo descifra. Ninguna clave puede realizar ambas funciones. Una de ellas puede ser publicad, mientras que la otra debe mantenerse en privado.
 
 La criptografía de clave pública usa algoritmos de clave asimétricos (tales como RSA), y se suele llamar por el término mas general *criptografía de clave asimétrica*.
 
-<a name="Clave_privada"></a>Clave privada
+ Clave privada
 --------------
-
-######[Arriba](#indice)
 
 vea *criptografía de clave pública/cifrado de clave pública*.
 
-<a name="Cliente"></a>Cliente
--------
-
-######[Arriba](#indice)
-
-El Cliente es una aplicación o un ordenador que consume un servicio remoto de otro ordenador conocido como servidor, a través de una red de telecomunicaciones.
-
-<a name="Chat"></a>Chat
+Chat
 ====
-
-######[Arriba](#indice)
 
 El chat, también llamado mensajería instantánea, es un método habitual de comunicación entre dos o más personas en la cual cada línea tipeada por un participante en una sesión es vista por los otros. Existen numerosos protocolos, incluyendo aquellos creados por empresas específicas (AOL, Yahoo!, Microsoft, Google, y otros) y los definidos públicamente. Algunos clientes soportan un único protocolo, pero la mayoría utiliza una variedad de los protocolos más populares.
 
-<a name="DARPA_"></a>DARPA
+DARPA 
 =====
-
-######[Arriba](#indice)
 
 DARPA (Defense Advanced Projects Research Agency, Agencia de investigación de proyectos avanzados de defensa) es el sucesor de ARPA, que fundó Internet y su predecesor, ARPAnet.
 
-<a name="Descifrado"></a>Descifrado
+Descifrado
 ----------
-
-######[Arriba](#indice)
 
 Descifrar es recuperar el texto plano u otros mensajes a partir de un mensaje cifrado mediante el uso de una clave.
 
 Consulte también *cifrado*.
 
-<a name="Direccion_IP"></a>Dirección IP
+Dirección IP
 --------------------------------------------------
-
-######[Arriba](#indice)
 
 Una dirección IP es un número que identifica una computadora en particular en Internet. En la versión 4 (IPv4) consiste en cuatro bytes (32 bits), a menudo representada por cuatro números enteros del rango de 0 a 255 separados por puntos, tal como  204.13.164.37. En IPv6, versión a la cual actualmente está cambiando la red, una dirección IP es cuatro veces más larga, y consiste de 128 bits. Puede ser escrita en 8 grupos de de 4 dígitos hexadecimales separados por dos puntos, por ejemplo 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
 
-<a name="Direccion_IP_publicamente_ruteable"></a>Dirección IP públicamente ruteable
+Dirección IP públicamente ruteable
 ----------------------------------
-
-######[Arriba](#indice)
 
 Las direcciones IP públicamente ruteables (a veces llamadas direcciones IP públicas) son aquellas que pueden alcanzarse de forma normal en Internet, a través de una cadena de enrutadores. Algunas direcciones IP son privadas, como el bloque 192.168.x.x, y muchas no están asignadas.
 
-<a name="DNS_Sistema_de_nombres_de_dominio_"></a>DNS (Sistema de nombres de dominio)
+DNS (Sistema de nombres de dominio)
 -----------------------------------
-
-######[Arriba](#indice)
 
 El sistema de nombres de dominio (DNS) convierte los nombres de dominio, compuestos por combinaciones de letras fáciles de recordar, a las direcciones IP, que son cadenas de números difíciles de recordar. Cada computadora en Internet tiene una dirección única (algo parecido a un código de área + número telefónico)
 
-<a name="Dominio"></a>Dominio
+Dominio
 -------
-
-######[Arriba](#indice)
 
 Un dominio puede ser un dominio de nivel superior (TLD) o un dominio secundario de Internet.
 
 Vea también *dominio de nivel superior*, *dominio de nivel superior con código país* y *dominio secundario*.
 
-<a name="Dominio_de_alto_nivel_con_codigo_de_pais_ccTLD_"></a>Dominio de alto nivel con código de país (ccTLD)
+Dominio de alto nivel con código de país (ccTLD)
 ------------------------------------------------
-
-######[Arriba](#indice)
 
 Cada país tiene un código de dos letras, y un TLD (dominio de alto nivel) basado en él, tal como .ca para Canada; este dominio se llama dominio de alto nivel con código de país. Cada ccTLD tiene un servidor DNS que lista todos los dominios de segundo nivel dentro del TLD. Los servidores raíz apuntan a todos los TLD, y almacenan la información usada frecuentemente en los dominios de nivel inferior.
 
-<a name="Dominio_de_nivel_superior_TLD_"></a>Dominio de nivel superior (TLD)
+Dominio de nivel superior (TLD)
 -------------------------------
-
-######[Arriba](#indice)
 
 En el ámbito de los nombres de Internet, el TLD es el último componente del nombre de dominio. Existen diversos TLD genéricos, los más importantes son .com, .org, .edu, .net, .gov, .mil, .int, y un código de país de dos letras (ccTLD) diferente para cada uno de ellos, por ejemplo, .ca for Canada. La Unión Europea también tiene código propio, .eu.
 
-<a name="E-mail_correo_electronico_"></a>E-mail (correo electrónico)
+E-mail (correo electrónico)
 ===========================
-
-######[Arriba](#indice)
 
 E-mail, abreviatura en inglés de correo electrónico, es un método para enviar y recibir mensajes por Internet. Se puede usar un servicio de web mail o enviarlos con el protocolo SMTP y recibirlos con el protocolo POP3 mediante un cliente de correo electrónico tal como Outlook Express o Thunderbird. Es raro que un gobierno bloquee el correo electrónico, sin embargo, la vigilancia es muy común. Si el correo electrónico no está cifrado, será muy fácil de leer por algún operador de red o un gobierno.
 
-<a name="Escuchas_ilegales"></a>Escuchas ilegales
+Escuchas ilegales
 -----------------
-
-######[Arriba](#indice)
 
 Las escuchas ilegales consisten en interceptar al tráfico de voz o la lectura o filtrar el tráfico de datos en una línea telefónica o una conexión de datos digitales, por lo general para detectar o prevenir actividades ilegales o no deseadas o para controlar o monitorear lo que la gente está hablando.
 
-<a name="Esquema"></a>Esquema
+Esquema
 -------
-
-######[Arriba](#indice)
 
 En la Web, un esquema es una asignación de un nombre a un protocolo. Así, el esquema HTTP asigna URLs que comienzan con HTTP: el Protocolo de Transferencia de Hipertexto. El protocolo determina la interpretación del resto de la URL, por lo que http://www.example.com/dir/content.html identifica un sitio web y un archivo específico en un directorio específico, y mailto: user@somewhere.com es una dirección de correo electrónico de una persona o grupo específico en un dominio específico. 
 
-<a name="Esteganografia"></a>Esteganografía
+Esteganografía
 --------------
-
-######[Arriba](#indice)
 
 Esta palabra, que en griego significa escritura ocultar, se refiere a la variedad de métodos para enviar mensajes ocultos donde no sólo lo está el contenido, sino que también es muy probable que algo que lo encubra también lo esté. Generalmente se oculta una cosa dentro de otra, como una fotografía o un texto dentro de algo sin relación alguna. Contrariamente a la criptografía, donde está claro que se está transmitiendo un mensaje secreto, la estenografía intenta ocultar también a la comunicación en sí misma.
 
-<a name="Ethernet"></a>Ethernet
---------
-
-######[Arriba](#indice)
-
-Ethernet es un estándar de redes para computadoras. Este define las características del cableado y la señalización en el nivel físico y los formatos de las unidades de datos transmitidas o series de bits sucesivas (tramas). Algunas propiedades del estandard  ethernet son: la velocidad de transmisión, el tipo de cable, la longitud máxima del cable sin repetidores y la topología o forma física de la red. Los tipos de cable ethernet pueden ser coaxial, trenzado (el cable que se usa con los conectores RJ-45) o la fibra óptica.
-
-<a name="Evasion"></a>Evasión
+Evasión
 -------
-
-######[Arriba](#indice)
 
 La evasión es publicar o dar acceso a los contenidos, a pesar de los intentos de censura.
 
-<a name="Expresion_regular"></a>Expresión regular
+Expresión regular
 -----------------
-
-######[Arriba](#indice)
 
 Una expresión regular (también conocida como regexp o RE) es un patrón de texto que especifica un conjunto de cadena de textos en una implementación particular de una expresión regular tal como la utilidad grep de UNIX. Una cadena de texto "encuentra" una expresión regular si la cadena concuerda con el patrón, como está definido en la sintaxis de la expresión regular. En cada sintaxis de RE, algunos caracteres tienen significados especiales, para permitir que un patrón encuentre múltiples cadenas. Por ejemplo, la expresión regular lo+se encuentra lose, loose, and looose.
 
-<a name="Filtro"></a>Filtro
+Filtro
 ======
-
-######[Arriba](#indice)
 
 Es alguna forma de búsqueda de patrones de datos para bloquear o permitir las comunicaciones.
 
-<a name="Filtro_de_bajo_ancho_de_banda"></a>Filtro de bajo ancho de banda
+Filtro de bajo ancho de banda
 -----------------------------
-
-######[Arriba](#indice)
 
 Un filtro de bajo ancho de banda es un servicio web que remueve elementos extraños tales como publicidades e imágenes de una página web y además la comprime, haciendo mucho más rápida la descarga.
 
-<a name="Filtro_de_palabra_clave"></a>Filtro de palabra clave
+Filtro de palabra clave
 -----------------------
-
-######[Arriba](#indice)
 
 Un filtro de palabra clave escanea todo el tráfico de Internet que pasa a través de un servidor para hallar palabras o términos prohibidos para poder bloquearlas.
 
-<a name="Firefox"></a>Firefox
+Firefox
 -------
-
-######[Arriba](#indice)
 
 Firefox es el navegador web open source más popular, desarrollado por la Fundación Mozilla.
 
-<a name="Firewall_cortafuegos_"></a>Firewall (cortafuegos)
-----------------------
-
-######[Arriba](#indice)
-
-Un cortafuegos o firewall es un dispositivo que está diseñado para permitir o bloquear el acceso y el tráfico entre los dispositivos de una red en base a un conjunto de criterios. El cortafuegos puede ser implementado en hardware y/o en software.
-
-<a name="Firmware"></a>Firmware
--------
-
-######[Arriba](#indice)
-
- El firmware son las instrucciones de máquina que establecen la lógica de más bajo nivel para controlar los circuitos electrónicos o integrados de un dispositivo. En pocas palabras es el software que controla físicamente al hardware.
-
-<a name="Foro"></a>Foro
+Foro
 ----
-
-######[Arriba](#indice)
 
 En un sitio web, un foro es un lugar para la discusión, donde los usuarios pueden publicar mensajes y comentar otros previamente publicados. Se diferencia de una lista de correo o un grupo de Usenet por la persistencia de las páginas que contienen los hilos de los mensajes. Los archivos de grupo de noticias y listas de correo, sin embargo, muestran habitualmente un mensaje por página, con páginas de navegación que listan solamente las cabeceras de los mensajes en un hilo.
 
-<a name="Frame_marco_"></a>Frame (marco)
+Frame (marco)
 -------------
-
-######[Arriba](#indice)
 
 Un frame es una porción de una página web que posee su propia URL. Por ejemplo, los frames se usan habitualmente para colocar un menú estático cercano a una ventana con texto deslizante.
 
-<a name="FTP_Protocolo_de_transferencia_de_archivo_"></a>FTP (Protocolo de transferencia de archivo)
+FTP (Protocolo de transferencia de archivo)
 -------------------------------------------
-
-######[Arriba](#indice)
 
 El protocolo FTP se usa para transferir archivos. Mucha gente lo usa generalmente para descargas; aunque se puede usar también para cargar páginas web y scripts para algunos servidores web. Usa habitualmente los puertos 20 y 21, que a veces están bloqueados. Algunos servidores FTP escuchan en otros puertos, pudiendo evadir el bloqueo basado en puertos.
 
 Un cliente FTP popular libre para Windows y Mac OS es FileZilla. Existen también algunos clientes FTP basados en la web que pueden usarse con un navegador normal tal como Firefox.
 
-<a name="Fuga_de_DNS"></a>Fuga de DNS
+Fuga de DNS
 -----------
-
-######[Arriba](#indice)
 
 Una fuga de DNS ocurre cuando un equipo que está configurado para usar un proxy para su conexión a Internet, sin embargo hace consultas DNS sin usarlo, lo que expone a los intentos de los usuarios para conectarse con sitios bloqueados. Algunos navegadores web tienen opciones de configuración para forzar el uso del proxy.
 
-<a name="Full_Duplex"></a>Full Dúplex
------------
-
-######[Arriba](#indice)
-
-Full Dúplex o dúplex es una comunicación bidireccional que envía y recibe mensajes de forma simultanea.
-
-<a name="Gateway"></a>Gateway
+Gateway
 =======
-
-######[Arriba](#indice)
 
 Un gateway es un nodo que conecta dos redes en Internet. Un ejemplo importante son los gateways nacionales a través de los cuales pasa todo el tráfico, tanto entrante como saliente.
 
-<a name="GNU_Privacy_Guard"></a>GNU Privacy Guard
+GNU Privacy Guard
 -----------------
-
-######[Arriba](#indice)
 
 GNU Privacy Guard (GnuPG o GPG) es una aplicación de software de criptografía, alternativa de PGP, con licencia libre GPL. Cumple con la especificación RFC 4880, la especificación estándar actual IETF de OpenPGP.
 
 vea también *PGP*.
 
-<a name="GPG"></a>GPG
+GPG
 ---
-
-######[Arriba](#indice)
 
 vea *GNU Privacy Guard*.
 
-<a name="Half-duplex"></a>Half-duplex
-===========
-
-######[Arriba](#indice)
-
-Se denomina semidúplex o half-duplex a un modo de envío de información que es bidireccional pero no simultáneo.
-
-<a name="Honeypot"></a>Honeypot
---------
-
-######[Arriba](#indice)
+Honeypot
+========
 
 Un honeypot es un sitio web que simula ofrecer un servicio para tentar a usuarios potenciales para que lo usen, y poder capturar información sobre ellos o sus actividades.
 
-<a name="Host"></a>Host
-----
-
-######[Arriba](#indice)
-
-Host o anfitrión es una computadora o dispositivo conectado a una red. Un host provee información, servicios y aplicaciones a los usuarios o a otros nodos de la red.
-
-<a name="HTTP_Protocolo_de_transferencia_de_hipertexto_"></a>HTTP (Protocolo de transferencia de hipertexto)
+HTTP (Protocolo de transferencia de hipertexto)
 -----------------------------------------------
-
-######[Arriba](#indice)
 
 HTTP es el protocolo fundamental de la World Wide Web, que proporciona métodos para solicitar y mostrar páginas Web, consultar y generar respuestas a las consultas, y el acceso a una amplia gama de servicios.
 
-<a name="HTTPS_HTTP_seguro_"></a>HTTPS (HTTP seguro)
+HTTPS (HTTP seguro)
 -------------------
-
-######[Arriba](#indice)
 
 Es un protocolo de comunicación segura mediante cifrado de mensajes HTTP. Los mensajes entre el cliente y el servidor se cifran en ambas direcciones, utilizando claves generadas cuando la conexión se solicitó y se intercambiaron con seguridad. Las direcciones IP de origen y destino están en las cabeceras de cada paquete, así que HTTPS no puede ocultar el hecho de la comunicación, sólo el contenido de los datos transmitidos y recibidos.
 
-<a name="Hub"></a>Hub
----
-
-######[Arriba](#indice)
-
-Un hub  es un dispositivo de red al cual se conectan varias computadoras. Cuando una computadora transmite datos, el hub que recibe la señal y repite esa misma señal a todas las computadoras conectadas al resto de sus puertos. De esta forma todas las computadoras o dispositivos que están conectadas a un hub pueden escuchar todos los datos enviados por ese hub.
-
-
-
-<a name="IANA_"></a>IANA
+ IANA 
 ====
-
-######[Arriba](#indice)
 
 IANA (Internet Assigned Numbers Authority, autoridad de asignación de números de internet) es la organización responsable de los trabajos técnicos en la gestión de la infraestructura de Internet, incluyendo la asignación de bloques de direcciones IP para dominios de nivel superior y los registradores de licencias de dominio para los ccTLD y de los dominios de nivel superior genéricos, la ejecución de los servidores raíz de Internet, y otros funciones.
 
-<a name="ICANN_"></a>ICANN
+ ICANN 
 -----
-
-######[Arriba](#indice)
 
 ICANN (Internet Corporation for Assigned Names and Numbers, corporación de internet para nombres y números asignados) es una corporación creada por el Departamento de Comercio de los EEUU para administrar los niveles más altos de Internet. El trabajo técnico lo lleva a cabo IANA.
 
-<a name="Mensajeria_instantanea_IM_"></a>Mensajería instantánea (IM)
+ Mensajería instantánea (IM)
 ---------------------------
-
-######[Arriba](#indice)
 
 La mensajería instantánea se refiere a chatear usando protocolos propietarios, o a chatear en general. Los clientes de mensajería instantánea más comunes son MSN Messenger, ICQ, AIM o Yahoo! Messenger.
 
-<a name="Intermediario"></a>Intermediario
+ Intermediario
 -------------
-
-######[Arriba](#indice)
 
 vea *man in the middle*.
 
-<a name="Intercambio_de_archivos"></a>Intercambio de archivos
+ Intercambio de archivos
 -----------------------
-
-######[Arriba](#indice)
 
 El intercambio de archivos se refiere a cualquier sistema de computadora donde mucha gente puede usar la misma información, pero a menudo se refiere a música, películas u otros materiales disponibles libres de cargo en Internet.
 
-<a name="Interfaz_comun_de_gateway"></a>Interfaz común de gateway
+ Interfaz común de gateway
 -------------------------
-
-######[Arriba](#indice)
 
 vea *CGI*.
 
-<a name="Interfaz_de_linea_de_comandos"></a>Interfaz de línea de comandos
+ Interfaz de línea de comandos
 -----------------------------
-
-######[Arriba](#indice)
 
 Es un método para controlar la ejecución de software usando comandos ingresados con un teclado, tal como un shell de Unix o una línea de comandos de Windows.
 
-<a name="Internet"></a>Internet
+ Internet
 --------
-
-######[Arriba](#indice)
 
 Internet es una red de redes interconectadas que usan TCP/IP y otros protocolos de comunicación.
 
-<a name="IRC_Internet_relay_chat_"></a>IRC (Internet relay chat)
+ IRC (Internet relay chat)
 -------------------------
-
-######[Arriba](#indice)
 
 IRC es un protocolo de Internet de más de 20 años de antiguedad usado para conversaciones de texto en tiempo real (chat o mensajería instantánea). Existen distintas redes IRC, la mayor posee más de 50.000 usuarios.
 
-<a name="ISP_Proveedor_de_servicio_de_internet_"></a>ISP (Proveedor de servicio de internet)
+ ISP (Proveedor de servicio de internet)
 ---------------------------------------
-
-######[Arriba](#indice)
 
 Un ISP (proveedor de servicio de Internet) es una empresa u organización que suministra acceso a Internet para sus clientes.
 
 
-<a name="JavaScript"></a>JavaScript
+ JavaScript
 ===========
-
-######[Arriba](#indice)
 
 JavaScript es un lenguaje de scripting, de uso habitual en las páginas web que suministran funciones interactivas.
 
-<a name="KeePass_KeePassX"></a>KeePass, KeePassX
+ KeePass, KeePassX
 =================
-
-######[Arriba](#indice)
 
 KeePass y KeePassX son dos tipos de administradores de contraseñas.
 
-<a name="Latencia"></a>Latencia
+ Latencia
 ========
-
-######[Arriba](#indice)
 
 La latencia es una medida del tiempo de demora experimentado en un sistema, en este contexto, en una computadora en la red. Se mide como el tiempo transcurrido entre el comienzo de la transmisión de un paquete y el comienzo de su recepción, entre un extremo de la red (por ejemplo usted) y el otro (por ejemplo el servidor web). Una manera muy poderosa de filtrado web es mantener una muy alta latencia, la que provoca que el uso de muchas herramientas de evasión sea muy dificultoso.
 
-<a name="Lista_blanca"></a>Lista blanca
+ Lista blanca
 ------------
-
-######[Arriba](#indice)
 
 Una lista blanca (whitelist) es una lista de sitios específicamente autorizados para establecer alguna forma particular de comunicación. Se puede filtrar el tráfico con una lista blanca (bloqueando todo excepto los sitios de la lista), una lista negra (permitiendo todo excepto los sitios de la lista), una combinación de ambas u otras políticas basadas en reglas y condiciones específicas.
 
-<a name="Lista_negra"></a>Lista negra
+ Lista negra
 -----------
-
-######[Arriba](#indice)
 
 Una lista negra (blacklist) es una lista de cosas prohibidas. Para la censura en Internet, es una lista de los sitios web o las direcciones IP de las computadoras prohibidas; se permite acceder a todos los sitios y/o computadoras excepto a aquellos listados específicamente. Una alternativa es una lista blanca, o lista de cosas permitidas. Una lista blanca bloquea el acceso a todos los sitios excepto a aquellos específicamente listados. No es muy común. Es posible combinar ambos tipos de listas usando cadenas de búsqueda u otras técnicas condicionales en URL que no coincidan con ninguna de las listas.
 
-<a name="MAC"></a>MAC
-====
-
-######[Arriba](#indice)
-
-La dirección MAC (Media Access Control) es un identificador de 48  bits que corresponde a una tarjeta o dispositivo de red. Se conoce también como dirección física y es única para cada dispositivo.
-
-<a name="Malware"></a>Malware
--------
-
-######[Arriba](#indice)
+ Malware
+=======
 
 Malware es un término general para referirse a software malicioso, incluyendo a los virus, que pueden estar instalados o pueden ser ejecutados sin su conocimiento. El malware toma el control de su computadora para fines específicos como, por ejemplo, enviar spam. (También se conoce al malware como badware.)
 
-<a name="Man_in_the_middle"></a>Man in the middle
+ Man in the middle
 -----------------
-
-######[Arriba](#indice)
 
 Un man in the middle (*hombre en el medio*) es una persona o computadora que captura tráfico en un canal de comunicación, principalmente para realizar cambios selectivos o bloquear el contenido de una manera que socave la seguridad criptográfica. En general, el ataque man-in-thr-middle implica pasar por un sitio Web, servicio o individuo con el fin de registrar o alterar las comunicaciones. Los gobiernos pueden ejecutar man-in-thr-middle en los gateways de entrada a un país por donde pasa todo el tráfico.
 
-<a name="Marcador"></a>Marcador
+ Marcador
 --------
-
-######[Arriba](#indice)
 
 Un marcador es una referencia a una posición dentro del software que apunta a un recurso externo. En un navegador, es una referencia a una página web – al elegir un marcador usted puede cargar rápidamente el sitio web sin necesidad de tipear la URL completa.
 
-<a name="Modem"></a>Módem
-------
-
-######[Arriba](#indice)
-
-Un módem es el dispositivo que convierte o modula una señal analógica en digital y demula una señal digital en analógica. El objetivo es producir una señal portadora que transmite una señal modulada que fue codificada en un medio diferente.
-
-Aunque hay dispositivos que modulan señales luminosas o de radio, los módems más comunes son los que transmiten los datos digitales de una computadora sobre una línea de teléfono que funciona con señales eléctricas y traducen esa información de regreso a datos digitales para que la computadora los lea.
-
-<a name="Monitoreo"></a>Monitoreo
+ Monitoreo
 ---------
-
-######[Arriba](#indice)
 
 El monitoreo consiste en el control continuo de un flujo de datos en busca de actividad no deseada.
 
-<a name="Motor_de_difusion_de_archivos"></a>Motor de difusión de archivos
+ Motor de difusión de archivos
 -----------------------------
-
-######[Arriba](#indice)
 
 Un motor de difusión de archivos es un sitio web editor que puede ser usado para eludir la censura. Un usuario sólo tiene que cargar el archivo a publicar una vez y el motor lo propaga a un conjunto de servicios de almacenamiento compartido (como Rapidshare o Megaupload).
 
-<a name="NAT_Traduccion_de_direccion_de_red_"></a>NAT (Traducción de dirección de red)
+ NAT (Traducción de dirección de red)
 ====================================
-
-######[Arriba](#indice)
 
 NAT es una función de un router para ocultar un espacio de direcciones de reasignación. Todo el tráfico que sale del router, utiliza su dirección IP, y el router sabe cómo enrutar el tráfico entrante a quien se lo solicite. NAT es frecuentemente aplicado por los cortafuegos. Puesto que las conexiones entrantes son normalmente prohibidas por NAT, se hace difícil ofrecer un servicio al público en general, como un sitio Web o un proxy público. En una red donde NAT está en uso, ofrecer este servicio requiere algún tipo de configuración de cortafuegos o método NAT transversal. 
 
-<a name="Nodo"></a>Nodo
+ Nodo
 ----
-
-######[Arriba](#indice)
 
 Un nodo es un dispositivo activo en una red. Un router es un ejemplo de un nodo. En las redes Psiphon y Tor, un servidor se conoce también como nodo.
 
-<a name="Nodo_abierto"></a>Nodo abierto
+ Nodo abierto
 ------------
-
-######[Arriba](#indice)
 
 Un nodo abierto es un nodo específico Psiphon que puede ser usado sin loguearse. Éste carga automáticamente una página de inicio propia, y se presenta a sí mismo en un lenguaje propio, pero puede ser usado por cualquier navegador web.
 
 vea también *nodo Psiphon*.
 
-<a name="Nodo_de_enlace_o_intermedio"></a>Nodo de enlace o intermedio
+ Nodo de enlace o intermedio
 ---------------------------
-
-######[Arriba](#indice)
 
 Un nodo intermedio es un nodo Tor que no es un nodo de salida. La ejecución de un nodo intermedio puede ser más segura que la ejecución de un nodo de salida, porque un nodo intermedio no se mostrará en los archivos de registro de terceros. (Un nodo intermediario a veces se llama un nodo sin salida.)
 
-<a name="Nodo_de_salida"></a>Nodo de salida
+ Nodo de salida
 --------------
-
-######[Arriba](#indice)
 
 Un nodo de salida es un nodo Tor que reenvía datos fuera de la red Tor.
 
-<a name="Nodo_privado"></a>Nodo privado
+ Nodo privado
 ------------
-
-######[Arriba](#indice)
 
 Un nodo privado es un nodo Psiphon que trabaja con autentificación, lo que significa que usted debe registrarse antes de poder usarlo. Hecho esto, podrá enviar invitaciones a su amigos para que usen este nodo específico.
 Vea también *nodo Psiphon*.
 
-<a name="Nodo_Psiphon"></a>Nodo Psiphon
+ Nodo Psiphon
 ------------
-
-######[Arriba](#indice)
 
 Un nodo Psiphon es un proxy web seguro diseñado para evadir la censura en Internet. Fue desarrollado por Psiphon inc. Psiphon puede ser de código libre o privativo.
 
-<a name="Nodo_sin_salida"></a>Nodo sin salida
+ Nodo sin salida
 ---------------
-
-######[Arriba](#indice)
 
 vea *nodo de enlace o intermedio*.
 
-<a name="Ofuscacion"></a>Ofuscación
+ Ofuscación
 ==========
-
-######[Arriba](#indice)
 
 La ofuscación consiste en ocultar texto utilizando técnicas de transformación fáciles de entender y de revertir que resistan la inspección casual, pero no al criptoanálisis, o hacer cambios menores en las cadenas de texto para prevenir comparaciones simples. Los proxies Web suelen utilizar la ofuscación para ocultar ciertos nombres y direcciones de los filtros de texto simples que pueden ser engañados. Por ejemplo, cualquier nombre de dominio puede contener opcionalmente un punto final, como en "somewhere.com.", Pero algunos filtros pueden buscar sólo "somewhere.com" (sin el punto final).
 
-<a name="Operador_de_red"></a>Operador de red
+ Operador de red
 ---------------
-
-######[Arriba](#indice)
 
 Un operador de red es una persona u organización que mantiene o controla una red y se encuentra en posición de monitorear, bloquear o alterar la comunicación que pasa a través de su red.
 
-<a name="OTR_mensajes_sin_registro_"></a>OTR (mensajes sin registro)
+ OTR (mensajes sin registro)
 ---------------------------
-
-######[Arriba](#indice)
 
 Un mensaje sin registro, comúnmente denominado  OTR, es un protocolo criptográfico que suministra un cifrado fuerte para conversaciones de mensajería instantánea.
 
-<a name="Paquete"></a>Paquete
+ Paquete
 =======
-
-######[Arriba](#indice)
 
 Un paquete es una estructura de datos definida por un protocolo de comunicación que contiene información específica en formas predeterminadas junto con datos arbitrarios para ser comunicados de un punto a otro. Los mensajes se dividen en partes que se almacenan en paquetes para ser transmitidos y luego se ensamblan en el otro extremo del enlace.
 
-<a name="Pastebin"></a>Pastebin
+ Pastebin
 --------
-
-######[Arriba](#indice)
 
 Es un servicio web donde cualquier tipo de texto puede ser cargado y leído sin tener que registrarse. Todos los textos son visibles públicamente.
 
-<a name="P2P"></a>P2P
+ P2P
 ---
-
-######[Arriba](#indice)
 
 Una red de pares (o P2P, *peer to peer*) es una red de computadoras entre iguales. A diferencia de las redes cliente-servidor no hay un servidor central por lo que el tráfico se distribuye sólo entre clientes. Esta tecnología se aplica sobre todo en los programas de intercambio como BitTorrent, eMule y Gnutella. Pero también la tecnología del muy antiguo Usenet o del programa de VoIP Skype VoIP se pueden clasificar como sistemas P2P.
 
 vea también *compartir archivos*.
 
-<a name="PGP_Pretty_Good_Privacidad_privacidad_bastante_buena_"></a>PGP (Pretty Good Privacidad, *privacidad bastante buena*)
+ PGP (Pretty Good Privacidad, *privacidad bastante buena*)
 ---------------------------------------------------------
-
-######[Arriba](#indice)
 
 PGP es un programa de computadora para cifrado que suministra privacidad criptográfica y autentificación para comunicación de datos. Se utiliza a menudo para firmar, cifrar y descifrar textos, correos electrónicos, archivos, directorios y particiones de discos para incrementar la seguridad de las comunicaciones por correo electrónico.
 
 PGP y otros productos similares siguen el estándar OpenPGP (RFC 4880) para cifrado y descifrado de datos.
 
-<a name="PHP"></a>PHP
+ PHP
 ---
-
-######[Arriba](#indice)
 
 PHP es un lenguaje de scripting diseñado para crear sitios web dinámicos y aplicaciones web. Se instala en un servidor. Por ejemplo, el popular proxy web PHProxy usa esta tecnología.
 
-<a name="POP3"></a>POP3
+ POP3
 ----
-
-######[Arriba](#indice)
 
 El protocolo POP3 (Post Office Protocol version 3) es usado para recibir correos electrónicos de un servidor, por defecto en el puerto 110 con un programa de correo electrónico tal como Outlook Express o Thunderbird.
 
-<a name="Privacidad"></a>Privacidad
+ Privacidad
 ----------
-
-######[Arriba](#indice)
 
 La protección de la intimidad consiste en impedir la divulgación de información privada personal sin el consentimiento de la persona interesada. En este contexto, significa impedir que algunos observadores se enteren de que una persona haya solicitado o recibido información que ha sido bloqueada o es ilegal en el país donde se encuentre la persona en cuestión.
 
-<a name="Protocolo"></a>Protocolo
+ Protocolo
 ---------
-
-######[Arriba](#indice)
 
 Una definición formal de un método de comunicación, y la forma en que los datos deben ser transmitidos. Además, se refiere al propósito de tal método de comunicación. Por ejemplo, el protocolo para la transmisión de paquetes de datos en Internet (IP), o el protocolo de transferencia de hipertexto para las interacciones en la World Wide Web (HTTP).
 
-<a name="Proxy_Web"></a>Proxy Web
+ Proxy Web
 ---------
-
-######[Arriba](#indice)
 
 Un proxy web es un script que se ejecuta en un servidor que actúa como un proxy/gateway. Los usuarios pueden acceder al proxy web con su navegador habitual (por ejemplo Firefox) e ingresar cualquier URL en el formulario localizado en el sitio web. luego el programa del servidor recibirá el contenido y lo mostrará al usuario. De esta forma el ISP sólo verá una conexión al servidor con el proxy web ya que no se ha establecido una conexión directa.
 
-<a name="Puente"></a>Puente
+ Puente
 ------
-
-######[Arriba](#indice)
 
 Vea *Puente Tor*
 
-<a name="Puente_Tor"></a>Puente Tor
+  Puente Tor
 ----------
-
-######[Arriba](#indice)
 
 Un puente es un nodo intermedio que no está listado en el directorio público principal de Tor, por lo que es especialmente útil en países donde las comunicaciones están bloqueadas. A diferencia del caso de los nodos de salida, las direcciones IP de los nodos puente nunca aparecen en los archivos de registro del servidor y nunca pasan a través de los nodos de control de manera que pueden ser conectados con la evasión.
 
-<a name="Puerto"></a>Puerto
+ Puerto
 ------
-
-######[Arriba](#indice)
 
 Un puerto de hardware en una computadora es un conector físico para un propósito específico que usa un protocolo de hardware propio. Algunos ejemplos son el puerto de la pantalla VGA o un conector USB.
 
 Los puertos de software también conectan computadoras y otros dispositivos en las redes usando distintos protocolos, pero existen en el software solamente como números. Los puertos son algo así como los números puestos sobre las puertas que dan acceso a distintas habitaciones, cada uno con un servicio especial en un servidor o en una PC. Están identificados por números enteros entre 0 y 65535.
 
-<a name="Remailer"></a>Remailer
+ Remailer
 ========
-
-######[Arriba](#indice)
 
 Un remailer anónimo es un servicio que le permite a los usuarios enviar correos electrónicos anónimamente. El remailer recibe los mensajes y lo reenvía a su destinatario después de remover la información que podría identificar al remitente original. Algunos servicios también proveen una dirección anónima que puede ser usada para recibir las respuestas sin descubrir su identidad. Algunos servicios de remailer conocidos incluyen a Cypherpunk, Mixmaster y Nym.
 
-
-
-<a name="Router"></a>Router
+ Router
 ------
-
-######[Arriba](#indice)
 
 Un router es una computadora que determina la ruta para reenviar paquetes. Utiliza la información de la dirección en la cabecera del paquete y la información de la caché en el servidor para hallar los números de dirección con conexiones de hardware.
 
-<a name="RSS_agregador_de_noticias_"></a>RSS (agregador de noticias)
+ RSS (agregador de noticias)
 ---------------------------
-
-######[Arriba](#indice)
 
 RSS es un método y un protocolo que le permite a los usuarios de Internet suscribirse al contenido de una página web, y recibir actualizaciones tan pronto como sean publicadas.
 
-<a name="Salto_Hop_"></a>Salto (Hop)
+ Salto (Hop)
 ===========
-
-######[Arriba](#indice)
 
 Es un enlace en una cadena de paquetes transferidos desde una computadora a otra, o alguna computadora a lo largo de la ruta. El número de saltos entre computadoras puede brindar una estimación de la demora (latencia) en las comunicaciones entre ellas. Cada salto individual es también una entidad que posee la capacidad de escuchar, bloquear o alterar las comunicaciones.
 
-<a name="Screenlogger"></a>Screenlogger
+ Screenlogger
 ------------
-
-######[Arriba](#indice)
 
 Un screenlogger es un software capaz de registrar todo lo que su computadora muestra en la pantalla. Su principal característica es capturar la pantalla y el login en archivos para consultarlos en otro momento. Los screenloggers pueden utilizarse como una poderosa herramienta de monitoreo. Debe ser precavido con todas las pantallas de login que se ejecuten en la computadora que esté usando, en todo momento.
 
-<a name="Script"></a>Script
+ Script
 ------
-
-######[Arriba](#indice)
 
 Un script es un programa, generalmente escrito en un lenguaje interpretado, no compilado (tal como JavaScript o Java), o en un lenguaje interpretado de comandos tal como bash. Muchas páginas web incluyen scripts para administrar la interacción con ella, y entonces el servidor no necesita reenviar cada página ante un nuevo cambio.
 
-<a name="Script_embebido"></a>Script embebido
+ Script embebido
 ---------------
-
-######[Arriba](#indice)
 
 Un script embebido es una pieza de código de software.
 
-<a name="Servidor_de_nombre_raiz"></a>Servidor de nombre raíz
+ Servidor de nombre raíz
 -----------------------
-
-######[Arriba](#indice)
 
 Un servidor de nombre raíz es uno de los trece grupos de servidores administrados por la IANA para dirigir el tráfico a todos los dominios de primer nivel, como el núcleo del sistema DNS.
 
-<a name="Servidor_DNS"></a>Servidor DNS
+ Servidor DNS
 ------------
-
-######[Arriba](#indice)
 
 A servidor DNS, o servidor de nombres, es un servidor que proporciona la función de consulta del sistema de nombres de dominio. Esto se hace ya sea mediante el acceso a un registro existente en caché de la dirección IP de un dominio específico, o mediante el envío de una solicitud de información a otro servidor de nombres.
 
-<a name="Servidor_proxy"></a>Servidor proxy
+ Servidor proxy
 --------------
-
-######[Arriba](#indice)
 
 Un servidor proxy es un servidor, sistema de computadora o un programa de aplicación que funciona como pasarela entre un cliente y un servidor web. Un cliente se conecta al servidor proxy y envía una petición a una página web desde un servidor diferente. Luego el servidor proxy accede al recurso conectándose al servidor especificado, y devuelve la información al sitio solicitante. Los servidores proxy pueden servir para diferentes propósitos, incluyendo el acceso a páginas web prohibidas o para ayudar a los usuarios a enrutarse sin obstáculos.
 
-<a name="Shell_terminal_consola_"></a>Shell (terminal, consola)
+ Shell (terminal, consola)
 -------------------------
-
-######[Arriba](#indice)
 
 Un shell de UNIX es una interfaz de usuario de línea de comandos tradicional para sistemas operativos UNIX y GNU/Linux. Los shells más comunes son sh y bash.
 
-<a name="Smartphone_telefono_inteligente_"></a>Smartphone (teléfono inteligente)
+ Smartphone (teléfono inteligente)
 ---------------------------------
-
-######[Arriba](#indice)
 
 Un smartphone es un teléfono móvil que ofrece capacidades de conectividad y computación más avanzadas que cualquier teléfono móvil común contemporáneo, tales como acceso web, capacidad de ejecución de sistemas operativos elaborados y de aplicaciones integradas.
 
-<a name="SOCKS"></a>SOCKS
+ SOCKS
 -----
-
-######[Arriba](#indice)
 
 Un proxy socks es una clase especial de servidor proxy. En el modelo OSI opera entre las capas de aplicación y de transporte. El puerto estándar para  un proxy SOCKS es 1080, pero puede correr en otros. Algunos programas soportan una conexión a través de un proxy SOCKS. Otra opción es instalar un cliente como FreeCap, ProxyCap o SocksCap los cuales pueden forzar a los programas a correr a través de un proxy Socks usando reenvío por puerto dinámico. También es posible utilizar herramientas SSH tales como OpenSSH como un servidor proxy SOCKS.
 
-<a name="Sockets"></a>Sockets
--------
-
-######[Arriba](#indice)
-
-Los sockets son el mecanismo de entrega de paquetes de datos provenientes de la tarjeta o dispositivo de red a los procesos o hilos apropiados dentro de una computadora. Un socket queda definido por una dirección I.P. local y remota más un par de números correspodientes a los sockets locales y remotos por ejemplo: 191.16.200.54:80. (Los últimos dos números depués de los dos puntos es el puerto.)
-
-<a name="Software_de_cadena_de_claves"></a>Software de cadena de claves
+  Software de cadena de claves
 ----------------------------
-
-######[Arriba](#indice)
 
 vea *administración de contraseñas*
 
-<a name="Spam"></a>Spam
+  Spam
 ----
-
-######[Arriba](#indice)
 
 El spam son los mensajes que saturan a un canal de comunicación utilizado por la gente, sobre todo con publicidad comercial, enviados a un gran número de individuos o a grupos de discusión. La mayoría del spam anuncia productos o servicios que son ilegales en una o más formas, casi siempre incluyendo el fraude. El filtrado de contenidos de correos electrónicos para bloquear el spam, con el permiso del destinatario, es una práctica universalmente extendida.
 
-<a name="SSH_shell_seguro_"></a>SSH (shell seguro)
+  SSH (shell seguro)
 ------------------
-
-######[Arriba](#indice)
 
 El SSH o shell seguro es un protocolo de red que permite las comunicaciones cifradas entre computadoras. Se inventó para suceder al protocolo sin cifrado Telnet, usado para acceder a un shell en un servidor remoto.
 
 El puerto estándar SSH es el puerto 22. Puede ser usado para eludir la censura en Internet con el reenvío de puertos o como túnel de otros programas tales como VNC.
 
-<a name="SSL_Secure_Sockets_Layer_capa_de_conexion_segura_"></a>SSL (Secure Sockets Layer, *capa de conexión segura*)
+  SSL (Secure Sockets Layer, *capa de conexión segura*)
 -----------------------------------------------------
-
-######[Arriba](#indice)
 
 SSL (o Secure Sockets Layer), es un estándar de cifrado usado para realizar transacciones seguras en Internet. Es la base sobre la cual se creó el  TLS (Transport Layer Security, *capa de transporte segura*). Puede averiguar fácilmente si está usando SSL observando la URL en su navegador web (por ejemplo Firefox o Internet Explorer): si comienza con https en lugar de http, su conexión está cifrada.
 
-<a name="Subdominio"></a>Subdominio
+  Subdominio
 ----------
-
-######[Arriba](#indice)
 
 Un subdominio es una parte de un dominio mayor. Por ejemplo, "wikipedia.org" es el dominio de Wikipedia, "es.wikipedia.org" es el subdominio de la versión en español de Wikipedia.
 
-<a name="Switch"></a>Switch
-------
-
-######[Arriba](#indice)
-
-Como el hub, un switch o conmutador está diseñado para recibir y transmitir flujos de datos agrupados en una unidad mínima de trasmisión conocida como "trama" (Frames). 
-Sin embargo a  diferencia de un hub, un switch no comparte el medio físico de transmisión entre todos los dispositivos conectados a el. Ya que el mensaje solo es enviado hacia sus destinatarios.
-A diferencia del router un switch no altera los mensajes que le son enviados, solamente los retransmite.
-
-<a name="Texto_plano"></a>Texto plano
+ Texto plano
 ===========
-
-######[Arriba](#indice)
 
 El texto plano es un texto sin formato que consiste en una secuencia de códigos de caracteres, como en ASCII o en Unicode.
 
-<a name="Texto_sin_formato"></a>Texto sin formato
+ Texto sin formato
 -----------------
-
-######[Arriba](#indice)
 
 El texto sin formato es texto sin cifrar, o texto descifrado.
 
 vea también *cifrado, TLS/SSL, SSH*.
 
-<a name="TLS_Seguridad_en_capa_de_transporte_"></a>TLS (Seguridad en capa de transporte)
+ TLS (Seguridad en capa de transporte)
 -------------------------------------
-
-######[Arriba](#indice)
 
 TLS es un estándar de cifrado basado en SSL, usado para realizar transacciones seguras en Internet.
 
-TCP/IP (Protocolo de control de transmisión sobre protocolo de Internet)
+ TCP/IP (Protocolo de control de transmisión sobre protocolo de Internet)
 -----------------------------------------------------------------------
-
-######[Arriba](#indice)
 
 TCP e IP son los protocolos fundamentales de Internet, ya que manejan la transmisión de paquetes y su ruteo. Existen algunas pocos protocolos alternativos para ser usados en este nivel de estructura de Internet, por ejemplo UDP.
 
-<a name="Trama"></a>Trama
+ Túnel
 -----
-
-######[Arriba](#indice)
-
-Trama En redes una trama es una unidad de envío de datos. Es una serie  sucesiva de bits, organizados en forma cíclica, que transportan  información y que permiten en la recepción extraer esta información. Es la información que viaja por el medio(capa de enlace de datos OSI,capa de enlace TCP/IP)
-
-<a name="Tunel"></a>Túnel
------
-
-######[Arriba](#indice)
 
 Un túnel es una ruta alternativa desde una computadora a otra, generalmente incluye un protocolo que especifica el cifrado de los mensajes.
 
-<a name="Tunel_DNS"></a>Túnel DNS
+ Túnel DNS
 ---------
-
-######[Arriba](#indice)
 
 Un túnel DNS es una forma de túnel a través de servidores de nombres DNS.
 
@@ -1333,75 +666,44 @@ En la conexión que desea utilizar un túnel de DNS, sólo tiene el puerto 53 di
 
 El problema principal es que no hay servidores de nombres públicos modificados que se pueden utilizar. Usted tiene que configurar su cuenta. Usted necesita un servidor con una conexión permanente a Internet con Linux. Allí puede instalar el software libre ozymandns y en combinación con SSH y un proxy como Squid puede utilizar el túnel. Más información sobre esto en http://www.dnstunnel.de.
 
-<a name="UDP_Paquete_de_datagramas_de_usuario_"></a>UDP (Paquete de datagramas de usuario)
+ UDP (Paquete de datagramas de usuario)
 ======================================
-
-######[Arriba](#indice)
 
 UDP es un protocolo alternativo usado con IP. Se puede acceder a la mayoría de los servicios de Internet usando TCP o UDP, pero existen algunos servicios que están definidos para usar exclusivamente alguno de los dos. Se usa habitualmente UDP en aplicaciones multimedia en tiempo real tales como llamadas telefónicas en Internet (VoIP).
 
-<a name="URL_localizador_uniforme_de_recursos_"></a>URL (localizador uniforme de recursos)
+ URL (localizador uniforme de recursos)
 --------------------------------------
-
-######[Arriba](#indice)
 
 La URL es la dirección del sitio web. Por ejemplo, la URL para la sección de noticias internacionales del periódico New York Times es http://www.nytimes.com/pages/world/index.html. Muchos sistemas de censura pueden bloquear una URL simple. Algunas formas sencillas de eludir el bloqueo es oscureciendo a la URL. Una manera de hacerlo es agregando un punto al final del nombre del sitio, entonces la URL http://en.cship.org/wiki/URL se convierte en http://en.cship.org./wiki/URL. ; si tiene suerte con este truco podrá acceder a sitios bloqueados.
 
-<a name="Usenet"></a>Usenet
+ Usenet
 ------
-
-######[Arriba](#indice)
 
 Usenet es un sistema de foros de discusión de más de 20 años de antiguedad al que se accede mediante el protocolo NNTP. Los mensajes no se almacenan en un servidor pero se encuentran en muchos servidores que distribuyen su contenido constantemente. Debido a esto es imposible censurar Usenet como un todo, no obstante el acceso a Usenet puede y se bloquea a menudo, y cualquier servidor en particular es probable que lleve sólo un subconjunto de grupos de noticias de Usenet localmente aceptables. Existen archivos de Google con toda la historia disponible de mensajes de Usenet para su búsqueda.
 
-<a name="VoIP_Protocolo_de_voz_sobre_Internet_"></a>VoIP (Protocolo de voz sobre Internet)
+ VoIP (Protocolo de voz sobre Internet)
 ========================================
-
-######[Arriba](#indice)
 
 VoIP se refiere a uno de varios protocolos para comunicación entre dos voces en tiempo real en Internet, que es notoriamente más barata que la llamada entre redes de voz de compañías telefónicas estándares. Una ventaja es que no pueden ser objeto de escuchas telefónicas como las practicadas en la telefonía tradicional, pero pueden ser monitoreadas usando tecnología digital. Muchas compañías producen software y equipamiento para escuchar llamadas VoIP; las tecnologías de VoIP cifrado y seguro recién se están desarrollando.
 
-<a name="VPN_red_privada_virtual_"></a>VPN (red privada virtual)
+ VPN (red privada virtual)
 -------------------------
-
-######[Arriba](#indice)
 
 Una VPN es una red de comunicación privada usada por muchas empresas y organizaciones para conectarse en forma segura sobre una red pública. Generalmente está cifrada y nadie, excepto los extremos de la comunicación pueden ver el tráfico de datos. Existen varios estándares tales como IPSec, SSL, TLS. El uso de un proveedor de VPN es un método muy rápido, seguro y conveniente para eludir la censura en Internet con bajo riesgo pero generalmente tiene un costo mensual. Sin embargo, tenga en cuenta que el estándar PPTP no es considerado muy seguro, por lo cual se desaconseja su uso.
 
-<a name="WAN"></a>WAN
----
-
-######[Arriba](#indice)
-
-Una WAN (wide area network)  o red de área amplia es una red de computadoras que abarca diferentes ubicaciones físicas y que une a varias redes locales o LANs.
-
-<a name="Webmail"></a>Webmail
--------
-
-######[Arriba](#indice)
+ Webmail
+=======
 
 Webmail es un servicio a través de un sitio web. El servicio envía y recibe los mensajes de correo para los usuarios de la manera habitual, pero suministra una interfaz web para leer y administrar mensajes, como una alternativa al uso de un cliente de correo tal como Outlook Express o Thunderbird en la computadora del usuario. Por ejemplo, un popular servicio de webmail libre es https://mail.google.com/
 
-<a name="Wifi"></a>Wifi
-----
-
-######[Arriba](#indice)
-
-Wifi es una estandar(IEEE_802.11) de conexión inalámbrica para dispositivos electrónicos dentro de una red de área local (WLAN)
-
-<a name="WHOIS"></a>WHOIS
+ WHOIS
 -----
-
-######[Arriba](#indice)
 
 WHOIS (who is, *¿quién es?*) es la función de Internet que permite realizar consultas a bases de datos WHOIS remotas para obtener información de registro de dominios. Mediante la realización de una simple búsqueda WHOIS puede descubrir cuándo y quién ha registrado un dominio, información de contacto y más.
 
 Una búsqueda WHOIS también puede revelar el nombre o la red mapeada a una dirección IP numérica.
 
-<a name="World_Wide_Web_WWW_">World Wide Web (WWW)
+World Wide Web (WWW)
 --------------------
 
-######[Arriba](#indice)
-
 La World Wide Web es la red de dominios y páginas de contenido con hipervínculos accesibles usando el protocolo de transferencia de hipertexto y sus numerosas extensiones. La World Wide Web es la parte más famosa de Internet.
-
