@@ -937,6 +937,13 @@ Un man in the middle (*hombre en el medio*) es una persona o computadora que cap
 
 Un marcador es una referencia a una posición dentro del software que apunta a un recurso externo. En un navegador, es una referencia a una página web – al elegir un marcador usted puede cargar rápidamente el sitio web sin necesidad de tipear la URL completa.
 
+<a name="Metadatos"></a>Metadatos
+--------
+
+######[Arriba](#indice)
+
+Los metadatos consisten en información que describe a los datos (e.g. documentos de Word, imagenes, archivos de musica, etc.).En esencia, los metadatos responden a quién, qué, cuándo, dónde, pórque y cómo acerca de cada aspecto de los datos que está describiendo.
+
 <a name="Modem"></a>Módem
 ------
 
