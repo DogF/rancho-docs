@@ -183,6 +183,8 @@ Versión: 2014-09-XX
 
 	* [[Marcador|glosario#Marcador]]
 
+	* [[Metadatos|glosario#Metadatos]]
+
 	* [[Módem|glosario#Modem]]
 
 	* [[Monitoreo|glosario#Monitoreo]]

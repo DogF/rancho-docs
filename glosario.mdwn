@@ -176,6 +176,8 @@ Mucho de este contenido está basado en [http://en.cship.org/wiki/Special:Allpag
 
 		* [Marcador](#Marcador)
 
+		* [Metadatos](#Metadatos)
+
 		* [Módem](#Modem)
 
 		* [Monitoreo](#Monitoreo)
